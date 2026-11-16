@@ -5,5 +5,9 @@
 extern crate alloc;
 
 mod geometry;
+mod semantics;
 
 pub use geometry::CuGridGeometry;
+pub use semantics::CuSemanticClass;
+pub use semantics::CuSemanticClassId;
+pub use semantics::CuSemanticLabelSet;
