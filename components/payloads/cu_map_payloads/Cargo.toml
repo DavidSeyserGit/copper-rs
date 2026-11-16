@@ -1,0 +1,36 @@
+[package]
+name = "cu-map-payloads"
+readme = "README.md"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+keywords.workspace = true
+categories.workspace = true
+homepage.workspace = true
+repository.workspace = true
+documentation = "https://docs.rs/cu-map-payloads"
+description = "Standardized grid and semantic map payload definitions for Copper"
+
+[package.metadata.copper]
+kind = "payload"
+domains = ["payload/map"]
+environments = ["host", "embedded"]
+
+[dependencies]
+bincode = { workspace = true }
+cu29 = { path = "../../../core/cu29", version = "~1.4.0-dev", default-features = false, features = [
+  "units",
+] }
+cu-spatial-payloads = { path = "../cu_spatial_payloads", version = "~1.4.0-dev", default-features = false }
+serde = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true, features = ["std"] }
+
+[features]
+default = ["std"]
+std = ["cu29/std"]
+textlogs = ["cu29/textlogs"]
+reflect = ["cu29/reflect"]

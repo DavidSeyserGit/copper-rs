@@ -58,6 +58,7 @@ members = [
   "components/monitors/cu_safetymon",
   "components/payloads/cu_ros2_payloads",
   "components/payloads/cu_gnss_payloads",
+  "components/payloads/cu_map_payloads",
   "components/payloads/cu_sensor_payloads",
   "components/payloads/cu_spatial_payloads",
   "components/res/cu_micoairh743",
@@ -326,6 +327,7 @@ cu-zenoh-bridge = { path = "components/bridges/cu_zenoh_bridge", version = "~1.4
 # Payload definitions
 cu-sensor-payloads = { path = "components/payloads/cu_sensor_payloads", version = "~1.4.0-dev" }
 cu-gnss-payloads = { path = "components/payloads/cu_gnss_payloads", version = "~1.4.0-dev" }
+cu-map-payloads = { path = "components/payloads/cu_map_payloads", version = "~1.4.0-dev" }
 cu-spatial-payloads = { path = "components/payloads/cu_spatial_payloads", version = "~1.4.0-dev" }
 cu-ros2-payloads = { path = "components/payloads/cu_ros2_payloads", version = "~1.4.0-dev" }
 cu-pid = { path = "components/tasks/cu_pid", version = "~1.4.0-dev" }
